@@ -1,26 +1,4 @@
 /*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
-
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 
@@ -180,6 +158,9 @@ a:focus {
     line-height: 1.5;
 }
 
+.substep { opacity: 0; }
+.substep.substep-visible { opacity: 1; transition: opacity 1s; }
+
 /*
     ... and we enhance the styles for impress.js.
 
@@ -267,8 +248,8 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#title h1 {
-    font-size: 180px;
+h1 {
+    font-size: 100px;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -527,6 +508,38 @@ a:focus {
     opacity: 1;
     cursor: pointer;
 }
+
+.impress-on-step-1,
+.impress-on-step-2,
+.impress-on-step-3,
+.impress-on-step-4,
+.impress-on-step-5,
+.impress-on-cube-1,
+.impress-on-cube-2,
+.impress-on-cube-3,
+.impress-on-cube-4,
+.impress-on-cube-5,
+.impress-on-cube-6,
+.impress-on-step-6,
+.impress-on-step-7,
+.impress-on-step-8,
+.impress-on-step-9,
+.impress-on-step-10,
+.impress-on-step-11,
+.impress-on-step-12,
+.impress-on-step-13,
+.impress-on-step-14,
+.impress-on-step-15,
+.impress-on-step-16,
+.impress-on-step-17,
+.impress-on-step-18,
+.impress-on-step-19,
+.impress-on-step-20
+ {
+  background: LightBlue;
+}
+
+
 
 /*
     This version of impress.js supports plugins, and in particular, a UI toolbar
